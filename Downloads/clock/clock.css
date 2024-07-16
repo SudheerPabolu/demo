@@ -1,0 +1,121 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dail{
+    border-radius: 50%;
+    border:4px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.dail1{
+    height: 700px;
+    width: 700px;
+    background-color: #ffa200;
+    box-shadow: 0px 0px 10px 2px #fd7702;
+}
+.dail2{
+    height: 680px;
+    width: 680px;
+    background-image:radial-gradient(white,gold) ;
+}
+.hour{
+    position: absolute;
+    border: 4px solid black;
+    height: 150px;
+    animation: rotation3;
+    animation-duration: 43200s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(48);
+    z-index: 2;
+    border-radius: 5px;
+}
+.minute{
+    position: absolute;
+    border: 3px solid black;
+    height: 250px;
+    animation: rotation2;
+    animation-duration: 3600s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(180);
+    z-index: 2;
+    border-radius: 5px;
+}
+.second{
+    position: absolute;
+    border: 2px solid #fd7702;
+    height: 300px;
+    animation: rotation1;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(60);
+    z-index:2;
+    border-radius: 5px;
+}
+.cenre{
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-image:radial-gradient(#f3e9af,#fdb706);
+    z-index: 3;
+
+}
+.num1{
+    top: 10;
+    left: 350;
+}
+.num2{
+    top: 330;
+    left: 25;
+}
+.num3{
+    top: 330;
+    right: 25;
+}
+.num4{
+    bottom: 55;
+    right: 340;  
+}
+.hi{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    position: absolute;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    color: #ff0000;
+    font-size: 50px;
+    z-index: 1; 
+    height: 10px;
+    width: 10px;
+}
+@keyframes rotation1 {
+    0%{
+        transform: rotate(0deg) translateY(-100px);
+    }
+    100%{
+        transform: rotate(360deg) translateY(-100px);
+    } 
+}
+@keyframes rotation2{
+    0%{
+        transform: rotate(0deg) translateY(-80px);
+    }
+    100%{
+        transform: rotate(360deg) translateY(-80px);
+    } 
+}
+@keyframes rotation3{
+    0%{
+        transform: rotate(0deg) translateY(-50px);
+    }
+    100%{
+        transform: rotate(360deg) translateY(-50px);
+    } 
+}
